@@ -86,6 +86,7 @@ if (contactForm) {
             body: JSON.stringify({
                 name: document.getElementById("name").value,
                 email: document.getElementById("email").value,
+                 phone: document.getElementById("phone").value,
                 message: document.getElementById("message").value
             })
         })
@@ -101,4 +102,5 @@ if (contactForm) {
             button.disabled = false; // enable again
         });
     });
+
 }

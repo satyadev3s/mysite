@@ -157,8 +157,10 @@
                     <form id="contactForm">
                         <input type="text" id="name" class="form-control mb-3" placeholder="Full Name" required>
                         <input type="email" id="email" class="form-control mb-3" placeholder="Email Address" required>
+                        <input type="text" id="phone" class="form-control mb-3" 
+       placeholder="Phone Number" required>
                         <textarea id="message" class="form-control mb-3" rows="4" placeholder="Your Message" required></textarea>
-                        <button type="submit" class="btn btn-neon w-100">Send Pulse</button>
+                        <button type="submit" class="btn btn-neon w-100">Send Message</button>
                     </form>
 
                 </div>
@@ -185,4 +187,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
+
 </html>

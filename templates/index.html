@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Your Name] | Full Stack Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div id="particles-js"></div>
+    <div class="cursor-glow"></div>
+
+    <nav class="navbar navbar-expand-lg fixed-top glass-nav">
+        <div class="container">
+            <a class="navbar-brand fw-bold gradient-text" href="#home">SANKU SRINU</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link px-3" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#profiles">Profiles</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section d-flex align-items-center">
+        <div class="container text-center">
+            <div class="blob-glow"></div>
+            <h1 class="display-1 fw-bold mb-3" data-aos="fade-up">Hi I'm <span class="gradient-text">S . SRINU</span></h1>
+            <h3 class="mb-4 text-white" data-aos="fade-up" data-aos-delay="100">
+                <span id="typed"></span>
+            </h3>
+            <div class="d-flex justify-content-center gap-3" data-aos="fade-up" data-aos-delay="200">
+                <a href="#projects" class="btn btn-neon">View Projects</a>
+                <a href="#contact" class="btn btn-outline-neon">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-5">
+        <div class="container py-5">
+            <div class="glass-card p-5" data-aos="fade-up">
+                <h2 class="section-title">About Me</h2>
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <p class="lead text-secondary">A highly motivated Full Stack Developer specializing in Python/Flask ecosystem. I build scalable backend architectures and modern user interfaces that focus on speed and security.</p>
+                        <p class="text-secondary">Expertise in RESTful APIs, JWT Authentication, and in SQL. I thrive on solving complex logic problems and turning them into seamless web experiences.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5" data-aos="fade-down">Innovative Projects</h2>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="flip-left" data-tilt>
+                    <div class="glass-card project-card">
+                        <div class="project-overlay"></div>
+                        <h5>Booking Doctor Appointment</h5>
+                        <p class="small text-secondary">a simple web application for booking doctor appointments.</p>
+                        <div class="mb-3"><span class="badge badge-skill">Html , css </span> <span class="badge badge-skill">Java Script</span></div>
+                        <div class="d-flex gap-2"><a href="https://github.com/satyadev3s/doctor-appointment" class="btn btn-sm btn-neon">GitHub</a><a href="https://satyadev3s.github.io/doctor-appointment/" class="btn btn-sm btn-outline-neon">Live</a></div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="flip-left" data-tilt>
+                    <div class="glass-card project-card">
+                        <h5>gamified Learning Platform</h5>
+                        <p class="small text-secondary">Scalable Frontend with Responsive Design .</p>
+                        <div class="d-flex gap-2"><a href="https://github.com/satyadev3s/vision-999" class="btn btn-sm btn-neon">GitHub</a><a href="https://satyadev3s.github.io/vision-999/" class="btn btn-sm btn-outline-neon">Live</a></div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="flip-left" data-aos-delay="200" data-tilt>
+                    <div class="glass-card project-card">
+                        <h5>URL Detector</h5>
+                        <p class="small text-secondary">Secure the system against malicious URLs.</p>
+                        <div class="mb-3"><span class="badge badge-skill">Security</span> <span class="badge badge-skill">Using Js</span></div>
+                        <div class="d-flex gap-2"><a href="https://github.com/satyadev3s/URL_Detector" class="btn btn-sm btn-neon">GitHub</a><a href="https://satyadev3s.github.io/URL_Detector/" class="btn btn-sm btn-outline-neon">Live</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2 class="section-title mb-5">Technical Skills</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4" data-aos="fade-right">
+                    <label class="d-block mb-2">Flask / Python <span class="float-end">85%</span></label>
+                    <div class="progress-container"><div class="progress-bar-neon" style="width: 85%"></div></div>
+                </div>
+                <div class="col-md-6 mb-4" data-aos="fade-left">
+                    <label class="d-block mb-2">Database (PostgreSQL) <span class="float-end">90%</span></label>
+                    <div class="progress-container"><div class="progress-bar-neon" style="width: 90%"></div></div>
+                </div>
+                <div class="col-md-6 mb-4" data-aos="fade-right">
+                    <label class="d-block mb-2">Frontend (HTML/css/JS) <span class="float-end">95%</span></label>
+                    <div class="progress-container"><div class="progress-bar-neon" style="width: 95%"></div></div>
+                </div>
+                <div class="col-md-6 mb-4" data-aos="fade-left">
+                    <label class="d-block mb-2">REST API Design <span class="float-end">92%</span></label>
+                    <div class="progress-container"><div class="progress-bar-neon" style="width: 92%"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="profiles" class="py-5">
+        <div class="container text-center">
+            <h2 class="section-title mb-5">Coding Footprint</h2>
+            <div class="row g-4">
+                <div class="col-md-3" data-aos="zoom-in">
+                    <div class="glass-card profile-card">
+                        <i class="fab fa-github fa-3x mb-3 text-white"></i>
+                        <a href="https://github.com/satyadev3s" target="_blank"><h5>GitHub</h5></a>
+                          <p class="small">15+ Repositories</p>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="glass-card profile-card">
+                        <i class="fas fa-terminal fa-3x mb-3 text-warning"></i>
+                        <a href="https://www.hackerearth.com/@satyadev2004.ns" target="_blank"><h5>HackerEarth</h5></a>
+                        <p class="small">150+ Solved</p>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="glass-card profile-card">
+                        <i class="fas fa-bolt fa-3x mb-3 text-primary"></i>
+                        <a href="https://www.codechef.com/START220" target="_blank"><h5>CodeChef</h5></a>
+                        <p class="small">300+ solved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="glass-card p-5" data-aos="zoom-out">
+                    <h2 class="text-center mb-4">Let's Connect</h2>
+
+                    <form id="contactForm">
+                        <input type="text" id="name" class="form-control mb-3" placeholder="Full Name" required>
+                        <input type="email" id="email" class="form-control mb-3" placeholder="Email Address" required>
+                        <textarea id="message" class="form-control mb-3" rows="4" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn-neon w-100">Send Pulse</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer class="py-4 text-center">
+        <div class="container">
+            <div class="social-icons mb-3">
+                <a href="https://www.linkedin.com/in/sanku-srinu-797573328/"><i class="fab fa-linkedin mx-2"></i></a>
+                <a href="https://www.instagram.com/srinu_032_?igsh=Z2hlZGhuc3NkaG90"><i class="fab fa-instagram mx-2"></i></a>
+                <a href="https://wa.me/916301202481?text=Hi%20I%20saw%20your%20portfolio"><i class="fab fa-whatsapp mx-2"></i></a>
+            </div>
+            <p class="small text-secondary">Mail : satyadev2004.ns@gmail.com  ||  6301202481</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
